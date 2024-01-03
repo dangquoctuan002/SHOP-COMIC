@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết Kế Website 2</title>
+</head>
+<body>
+    <section class="header">
+        <div class="hd-left">
+            <div class="logo">
+                <a href="trangchu.html"><img src="../IMG/logo2.png" alt="" width="50px" height="50px"></a>
+             
+            </div>
+            <div class="wedname">
+                <a href="trangchu.html"><h2>COMIC HOUSE</h2></a>
+            </div>
+        </div>
+
+        <div class="hd-right">
+            <div class="signin">
+                <a href="dangnhap.html">Đăng Nhập</a>
+            </div>
+            <div class="signup">
+                <a href="dangki.html">Đăng Kí</a>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="">Ngoại Ngữ <i class="fa-solid fa-caret-down"></i></a>
+                <div class="sup-menu1">
+                    <ul>
+                        <li><a href="sanpham11.html">Tiếng Trung</a></li>
+                        <li><a href="sanpham12.html">Tiếng Anh</a></li>
+                        <li><a href="sanpham13.html">Tiếng Nhật</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Khoa Học <i class="fa-solid fa-caret-down"></i></a>
+                <div class="sup-menu2">
+                    <ul>
+                        <li><a href="sanpham21.html">Đời Sống</a></li>
+                        <li><a href="sanpham22.html">Truyện Tranh</a></li>
+                        <li><a href="sanpham23.html">Lý Luận</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Tạp Chí <i class="fa-solid fa-caret-down"></i></a>
+                <div class="sup-menu3">
+                    <ul>
+                        <li><a href="sanpham31.html">Lập Trình</a></li>
+                        <li><a href="sanpham32.html">Show Bizt</a></li>
+                        <li><a href="sanpham33.html">Nghệ Thuật</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="sukien.html">Sự Kiện</a></li>
+            <li><a href="lienhe.html">Hỗ Trợ</a></li>
+            <li>
+                <form class="form-field"> 
+                    <input type="text" name="search" id="search" class="form-input" placeholder=" ">
+                    <label for="Search" class="form-label">Search</label>
+                    <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </li>
+        </ul>
+    </section>
+
+    <section class="content">
+        <div id="wrapper">
+            <form action="" id="form-login" onsubmit="login()">
+                <h1 class="form-heading">Đăng Nhập</h1>
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" id="username" placeholder="Tên đăng nhập">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" class="form-input" id="password" placeholder="Mật khẩu">
+                    <div id="eye">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                    <input type="email" id="email" placeholder="email">
+                </div>
+                <button id="btn" class="btn">Đăng nhập</button>
+            </form>
+            <div class="ct-signup">
+                <a href="dangki.html" style="color: black;">Đăng kí</a>
+            </div>
+        </div>
+        
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="../JS/dangnhap.js"></script>
+</html>

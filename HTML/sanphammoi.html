@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/sanphammoi.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Example</title>
+    </head>
+    <body>
+
+        <section>
+            <div class="list">
+                <div class="text"><h3>Truyện Mới</h3></div>
+                <div class="li">
+                    <li><a href="">Chú Bé Rồng</a></li>
+                    <li><a href="">Doremon</a></li>
+                    <li><a href="">Hải Tặc </a></li>
+                </div>
+            </div>
+            <div class="list">
+                <div class="text"><h3>Tư Vấn Trực Tiếp</h3></div>
+                <div class="li">
+                    <li><a href="https://www.messenger.com/"><img src="../IMG/zalo.png" alt=""></a></li>
+                    <li><a href="https://chat.zalo.me/"><img src="../IMG/mes.png" alt=""></a></li>
+              
+                </div>
+            </div>
+            <div class="list">
+                <div class="text"><h3>Thống Kê Truy Cập</h3></div>
+                <div class="li">
+                    <li>Số ngươi online: 1</li>
+                    <li>Số lần đã truy cập: 69</li>
+                  
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <div class="dropdown">
+                <div class="text"><input type="text" class="textBox" placeholder="sản phẩm mới 1" required></div>
+                <div class="option">
+                    <div onclick="show()">
+                        <a href="chitietsanpham.html"><img src="../IMG/listanh11/Q1.png" alt=""></a>
+                    </div>
+                    <div onclick="show()">
+                        <img src="../IMG/listanh11/Q1.png" alt="">
+                    </div>
+                    <div onclick="show()">
+                        <img src="../IMG/listanh11/Q1.png" alt="">
+                    </div>
+                    <div onclick="show()">
+                        <img src="../IMG/listanh11/Q1.png" alt="">
+                    </div>
+                    <div onclick="show()">
+                        <img src="../IMG/listanh11/Q1.png" alt="">
+                    </div>
+                </div>
+        </div> -->
+        <!-- <script>
+            let dropdown = document.querySelector('.dropdown');
+            dropdown.onclick = function(){
+            dropdown.classList.toggle('active');
+           } 
+        </script> -->
+        <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+        <script>
+            $(function(){
+                $('.li').slideUp();
+                $('.list .text').click(function(e){
+                   
+                    $(this).next().slideToggle();
+                    // $(this).toggleClass('text2');
+                })
+            })
+        </script>
+    </body>
+</html>
